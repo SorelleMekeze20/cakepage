@@ -1,27 +1,70 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Barre de navigation */
+.navbar {
+  background-color: #333;
+  padding: 10px ;
+  position: fixed; /* La navigation reste en haut même en scrollant */
+  width: 100%;     /* Prendre toute la largeur */
+  top: 0;          /* Placer la barre en haut de la page */
+  z-index: 1000;   /* S'assurer que la barre reste devant tout */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+.navbar ul {
+  display: flex;
+  justify-content: center; /* Centrer les éléments */
+  margin: 0 20px; /* Espacement entre les liens */
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.navbar span{
+  color: white;
+  font-weight: bold; /* Rendre les liens en gras */
+  font-size: 18px;
+}
+.navbar ul  a {
+  color: white;
+  font-weight: bold; /* Rendre les liens en gras */
+  font-size: 18px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+
+/* Pour éviter que le contenu soit caché sous la barre */
+main {
+  padding-top: 60px; /* Espace pour la barre fixe en haut */
+  text-align: center;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: flex-start;
+}
+.image {
+
+  display: flex;
+  justify-content: center;
+  flex: 50%;
+}
+.recipe-text {
+
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+}
+
+
+
+li {
+  margin-bottom: 10px;
+
+  text-align: left;
+}
+
+h2 {
+  margin: 20px ;
+  text-align: center;
+}
+p {
+  text-align: left;
 }
