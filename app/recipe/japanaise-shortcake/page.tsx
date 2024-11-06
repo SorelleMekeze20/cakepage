@@ -1,8 +1,11 @@
-import Link from "next/link";
+"use client";
 import Image from "next/image";
 import Navbar from "@/app/components/Navbar";
 import Ingredients from "@/app/components/Ingredients";
 import Preparation from "@/app/components/Preparation";
+import Footer from "@/app/components/footer";
+import Hero from "@/app/components/heros";
+import Checkbox from "@/app/components/checkbox";
 
 const steps = [
     "Preheat your oven to 170°C (340°F). Grease and line a 20cm (8-inch) round cake pan with parchment paper.",
@@ -21,10 +24,11 @@ const ingredients = [
     "Powdered sugar for dusting (optional)"
 ];
 export default function Page() {
-    return (
-        <div>
-            <Navbar title={"Japanase-shortcake"}/>
 
+    return (
+        <div className="page-container">
+            <Navbar/>
+            <Hero title1={"Welcome to Crazy Cakes!"} title2={"Your destination for the most delightful cake recipes."}/>
             <main className="main-layout">
                 <section className="japanase-shortcake">
                     <div className="content">
@@ -54,10 +58,12 @@ export default function Page() {
                             />
                         </div>
                     </div>
+                    <Checkbox/>
                 </section>
+
             </main>
 
-
+            <Footer/>
         </div>
     );
 }

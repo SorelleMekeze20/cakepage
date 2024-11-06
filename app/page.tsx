@@ -1,31 +1,28 @@
 import Image from "next/image";
-import Link from "next/link";
 import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/footer";
+import Hero from "@/app/components/heros";
 
 export default function Home() {
-    const links = [
-        {name: "Recipe", url: "/recipe"},
-        // Ajoutez d'autres liens ici si nécessaire
-    ];
-    return (
-        <div>
-            <Navbar links={links}/>
 
+
+    return (
+        <div className="page-container">
+            <Navbar/>
+            <Hero title1={"Welcome to Crazy Cakes!"} title2={"Your destination for the most delightful cake recipes."}/>
 
             <main>
-                <h1>crazy cake page!</h1>
-                <div className={"image"}>
+
+                <div className="image">
                     <Image
                         src="/images/birthday-cakes.jpeg"
                         alt="Birthday Cakes"
-                        width={1000}
-                        height={1000}
+                        width={900}
+                        height={500}
                     />
-
                 </div>
-
             </main>
-
+            <Footer/>
         </div>
     );
 }

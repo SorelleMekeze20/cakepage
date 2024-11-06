@@ -1,8 +1,11 @@
-import Link from "next/link";
+"use client";
 import Image from "next/image";
 import Navbar from "@/app/components/Navbar";
 import Ingredients from "@/app/components/Ingredients";
 import Preparation from "@/app/components/Preparation";
+import Footer from "@/app/components/footer";
+import Hero from "@/app/components/heros";
+import Checkbox from "@/app/components/checkbox";
 
 const ingredients = [
     "250g all-purpose flour",
@@ -29,19 +32,21 @@ const steps = [
     "Let cool before serving."
 ];
 export default function Page() {
-    return (
-        <div>
-            <Navbar title={"Apfelkuchen"}/>
 
+
+    return (
+        <div className="page-container">
+            <Navbar/>
+            <Hero title1={"Welcome to Crazy Cakes!"} title2={"Your destination for the most delightful cake recipes."}/>
             <main className="main-layout">
                 <section className="japanaise-shortcake">
                     <div className="content">
-                        <div className="recipe-text">
+                        <div className="flex  flex-col">
                             <h2>Japanaise Shortcake Recipe</h2>
 
 
                             <p>
-                                Discover the recipe for Japanaise Shortcake, a delicious soft cake with fresh
+                                Discover the recipe for Apfelkuchen , a delicious soft cake with fresh
                                 strawberries and whipped cream. Perfect for any occasion!
                             </p>
 
@@ -56,7 +61,7 @@ export default function Page() {
                                 </p>
                             </div>
                         </div>
-                        <div className={"image"}>
+                        <div className={"flex items-center"}>
                             <Image
                                 src="/images/Apfelkuchen-mit-Streusel-08-scaled.webp"
                                 alt="Apfelkuchen"
@@ -64,12 +69,18 @@ export default function Page() {
                                 height={500}
                             />
                         </div>
+                        <div>
+
+                        </div>
 
                     </div>
+
+
                 </section>
+
             </main>
 
-
+            <Footer/>
         </div>
     );
 }
