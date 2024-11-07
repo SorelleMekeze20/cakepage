@@ -1,3 +1,4 @@
+import React from "react";
 type Props = {
     title: string;
     ingredients: string[];
@@ -7,11 +8,11 @@ const Ingredients = ({title, ingredients}: Props) => {
     return (
         <div>
             <h2>{title}</h2>
-            <ul className="list-none list-inside p-20 m-20">
+            <ul className="!list-none list-inside p-5 m-5">
                 {ingredients.map((ingredient) => (
                     <li
-                        key={ingredient.toString()} className={"flex items-center"}>
-                        <input type="checkbox"/>
+                        key={ingredient} className={"flex items-center space-x-3"}>
+                        <input type="checkbox" className={"flex-auto"}/>
                         <p className={"flex-auto"}>{ingredient} </p>
                     </li>
                 ))}

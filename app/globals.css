@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* Barre de navigation */
 .navbar {
     background-color: #333;
@@ -62,6 +65,9 @@ main {
     flex: 50%;
 
 }
+/*ul{
+    list-style-type: none !important;
+}*/
 
 .recipe-text {
     display: flex;
@@ -82,6 +88,7 @@ h2 {
 
 p {
     text-align: left;
+   /* display: flex;*/
 }
 
 .hero {
@@ -90,7 +97,7 @@ p {
     text-align: center;
 }
 
-.
+
 .hero-image {
     position: absolute;
     top: 0;
