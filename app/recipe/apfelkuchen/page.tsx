@@ -3,9 +3,9 @@ import Image from "next/image";
 import Navbar from "@/app/components/Navbar";
 import Ingredients from "@/app/components/Ingredients";
 import Preparation from "@/app/components/Preparation";
-import Footer from "@/app/components/footer";
-import Hero from "@/app/components/heros";
-import Checkbox from "@/app/components/checkbox";
+import Footer from "@/app/components/Footer";
+import Hero from "@/app/components/Heros";
+import Checkbox from "@/app/components/Checkbox";
 
 const ingredients = [
     "250g all-purpose flour",
@@ -40,9 +40,9 @@ export default function Page() {
             <Hero title1={"Welcome to Crazy Cakes!"} title2={"Your destination for the most delightful cake recipes."}/>
             <main className="main-layout">
                 <section className="japanaise-shortcake">
-                    <div className="content">
-                        <div className="flex  flex-col">
-                            <h2>Japanaise Shortcake Recipe</h2>
+                    <div className="flex">
+                        <div className="  flex-wrap flex-col">
+                            <h2> Apfelkuchen Recipe</h2>
 
 
                             <p>
@@ -61,19 +61,20 @@ export default function Page() {
                                 </p>
                             </div>
                         </div>
-                        <div className={"flex items-center"}>
-                            <Image
-                                src="/images/Apfelkuchen-mit-Streusel-08-scaled.webp"
-                                alt="Apfelkuchen"
-                                width={500}
-                                height={500}
-                            />
-                        </div>
-                        <div>
+
+                        <div className="flex justify-center">
+                                <Image
+                                    src="/images/Apfelkuchen-mit-Streusel-08-scaled.webp"
+                                    alt="Apfelkuchen"
+                                    width={500}
+                                    height={10}
+                                />
+                            </div>
+                            <div>
+
+                            </div>
 
                         </div>
-
-                    </div>
 
 
                 </section>

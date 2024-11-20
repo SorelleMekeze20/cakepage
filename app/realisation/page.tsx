@@ -1,7 +1,7 @@
 import Navbar from "@/app/components/Navbar";
 
-import Hero from "@/app/components/heros";
-import Footer from "@/app/components/footer";
+import Hero from "@/app/components/Heros";
+import Footer from "@/app/components/Footer";
 
 export default function realisation() {
     return (

@@ -3,9 +3,9 @@ import Image from "next/image";
 import Navbar from "@/app/components/Navbar";
 import Ingredients from "@/app/components/Ingredients";
 import Preparation from "@/app/components/Preparation";
-import Footer from "@/app/components/footer";
-import Hero from "@/app/components/heros";
-import Checkbox from "@/app/components/checkbox";
+import Footer from "@/app/components/Footer";
+import Hero from "@/app/components/Heros";
+import Checkbox from "@/app/components/Checkbox";
 
 const steps = [
     "Preheat your oven to 170°C (340°F). Grease and line a 20cm (8-inch) round cake pan with parchment paper.",
@@ -31,8 +31,8 @@ export default function Page() {
             <Hero title1={"Welcome to Crazy Cakes!"} title2={"Your destination for the most delightful cake recipes."}/>
             <main className="main-layout">
                 <section className="japanase-shortcake">
-                    <div className="content">
-                        <div className="recipe-text">
+                    <div className="flex">
+                        <div className="  flex-wrap flex-col">
                             <h2>Japanaise Shortcake Recipe</h2>
                             <p>
                                 Discover the recipe for Japanaise Shortcake, a delicious soft cake with fresh
@@ -49,7 +49,7 @@ export default function Page() {
                             </p>
                         </div>
 
-                        <div className="image">
+                        <div className=" flex justify-center">
                             <Image
                                 src="/images/IMG_8437.jpg"
                                 alt="Japanaise Shortcake"
@@ -58,7 +58,7 @@ export default function Page() {
                             />
                         </div>
                     </div>
-                    <Checkbox/>
+
                 </section>
 
             </main>

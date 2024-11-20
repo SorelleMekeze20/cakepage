@@ -1,6 +1,6 @@
 import Navbar from "@/app/components/Navbar";
-import Hero from "@/app/components/heros";
-import Footer from "@/app/components/footer";
+import Hero from "@/app/components/Heros";
+import Footer from "@/app/components/Footer";
 
 
 export default function aboutus() {
@@ -9,8 +9,8 @@ export default function aboutus() {
         <div className="aboutus-container">
             <Navbar/>
             <Hero title1={"About-us"} title2={"Your destination for the most delightful cake recipes."}/>
-            <main className="main-layout">
-                <h1>hallo</h1>
+            <main >
+                <h1 >hallo</h1>
                 <p>cake</p>
                 <p>cake</p>
                 <p>cake</p>

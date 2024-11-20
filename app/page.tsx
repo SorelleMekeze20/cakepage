@@ -1,23 +1,23 @@
 import Image from "next/image";
 import Navbar from "@/app/components/Navbar";
-import Footer from "@/app/components/footer";
-import Hero from "@/app/components/heros";
+import Footer from "@/app/components/Footer";
+import Hero from "@/app/components/Heros";
 
 export default function Home() {
 
 
     return (
-        <div className="page-container">
+        <div className="bg-white min-h-9">
             <Navbar/>
             <Hero title1={"Welcome to Crazy Cakes!"} title2={"Your destination for the most delightful cake recipes."}/>
 
-            <main>
+            <main className={"text-center p-14"}>
 
-                <div className="image">
+                <div className=" flex justify-center">
                     <Image
                         src="/images/birthday-cakes.jpeg"
                         alt="Birthday Cakes"
-                        width={900}
+                        width={500}
                         height={500}
                     />
                 </div>
