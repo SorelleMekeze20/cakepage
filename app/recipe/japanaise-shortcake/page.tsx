@@ -28,11 +28,11 @@ export default function Page() {
     return (
         <div className="page-container">
             <Navbar/>
-            <Hero title1={"Welcome to Crazy Cakes!"} title2={"Your destination for the most delightful cake recipes."}/>
+            <Hero />
             <main className="main-layout">
-                <section className="japanase-shortcake">
-                    <div className="flex">
-                        <div className="  flex-wrap flex-col">
+                <section className="japanase-shortcake p-10">
+                    <div className="flex bg-gray-100">
+                        <div className="flex-initial">
                             <h2>Japanaise Shortcake Recipe</h2>
                             <p>
                                 Discover the recipe for Japanaise Shortcake, a delicious soft cake with fresh
@@ -49,7 +49,7 @@ export default function Page() {
                             </p>
                         </div>
 
-                        <div className=" flex justify-center">
+                        <div className="flex-initial">
                             <Image
                                 src="/images/IMG_8437.jpg"
                                 alt="Japanaise Shortcake"

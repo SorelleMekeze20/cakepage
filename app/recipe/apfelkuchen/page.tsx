@@ -37,11 +37,11 @@ export default function Page() {
     return (
         <div className="page-container">
             <Navbar/>
-            <Hero title1={"Welcome to Crazy Cakes!"} title2={"Your destination for the most delightful cake recipes."}/>
-            <main className="main-layout">
-                <section className="japanaise-shortcake">
+            <Hero title1={"Welcome to Crazy Cakes!"} />
+            <main className="main-layout bg-gray-100">
+                <section className="japanaise-shortcake p-10">
                     <div className="flex">
-                        <div className="  flex-wrap flex-col">
+                        <div className="  flex-initial">
                             <h2> Apfelkuchen Recipe</h2>
 
 
@@ -62,12 +62,12 @@ export default function Page() {
                             </div>
                         </div>
 
-                        <div className="flex justify-center">
+                        <div className="flex-initial p-10">
                                 <Image
                                     src="/images/Apfelkuchen-mit-Streusel-08-scaled.webp"
                                     alt="Apfelkuchen"
                                     width={500}
-                                    height={10}
+                                    height={500}
                                 />
                             </div>
                             <div>

@@ -3,6 +3,7 @@ import {useState} from 'react';
 import Navbar from "@/app/components/Navbar";
 import Hero from "@/app/components/Heros";
 import Footer from "@/app/components/Footer";
+import TextInput from "@/app/components/TextInput";
 
 export default function Contact() {
     const [name, setName] = useState('');
@@ -16,34 +17,23 @@ export default function Contact() {
 
 
     return (
-        <div className="bg-gray-100 p-5">
+        <div >
             <Navbar/>
-            <Hero title1={"Contact"} title2={"Your destination for the most delightful cake recipes."}/>
-            <main className="max-w-2xl  m-auto bg-white p-5 rounded-lg shadow-lg ">
+            <Hero title1={"Contact"} />
+            <main className="max-w-2xl  m-auto bg-white p-10 bg-gray-100 ">
                 <h1 className={"text-3xl font-semibold text-center mb-6 "}>Contact Us</h1>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-4" >
                         <label htmlFor={"name"} className={"block mb-2 "}>
                             <span>Name</span>
-                            <input className={"w-full border-2 border-b-blue-800 "}
-                                type="text"
-                                name="name"
-                                required
-                            />
+                            < TextInput type={"Name"} name={"Name"}/>
                         </label>
                     </div>
-
-
-
 
                     <div className="mb-4">
                         <label htmlFor={"email"} className={"block mb-2 "}>
                             <span>Email</span>
-                            <input className={"w-full border-2 border-b-blue-800"}
-                                type="email"
-                                name="email"
-                                required
-                            />
+                            < TextInput type={"email"} name={"Email"}/>
                         </label>
                     </div>
 
@@ -52,7 +42,8 @@ export default function Contact() {
                             <span>Message</span>
                             <textarea className={"w-full p-10 border-solid  rounded border-4 border-b-blue-800"}
                                 name="message"
-                                required
+                                      required
+
                             />
                         </label>
                     </div>

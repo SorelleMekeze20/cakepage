@@ -10,40 +10,56 @@ export default function Page() {
     return (
         <div className="bg-white min-h-9">
             <Navbar/>
-            <Hero title1={"Recipe!"} title2={"Your destination for the most delightful cake recipes."}/>
+            <Hero />
 
-            <main className="main-layout">
-
-                <section className="japanaise-shortcake">
-
-                    <h2 className={"m-20 text-center" }>
-                        <Link href="/recipe/japanaise-shortcake" className={"font-bold text-xl"}>Japanaise Shortcake</Link>
+            <main className="main-layout flex p-10 bg-gray-100">
+                <div className={"flex-initial"}>
+                    <h2 className={"m-10 text-center"}>
+                        Japanaise Shortcake
                     </h2>
-                  <div className={"flex justify-center"}>
-                    <Image
-                        src="/images/IMG_8437.jpg"
-                        alt="Japanaise Shortcake"
-                        width={500}
-                        height={500}
-                    />
-                  </div>
-                </section>
-
-
-                <section className="apfelkuchen">
-
-                    <h2 className={"m-20 text-center"}>
-                        <Link href="/recipe/apfelkuchen" className={"font-bold text-xl"}>Apfelkuchen</Link>
+                    <div className={"flex-initial"}>
+                        <Image
+                            src="/images/IMG_8437.jpg"
+                            alt="Japanaise Shortcake"
+                            width={400}
+                            height={500}
+                        />
+                    </div>
+                    <Link href="/recipe/japanaise-shortcake"
+                          className={" m-30 text-neutral-50 text-center text-xl bg-blue-950 "}>Japanaise
+                        Shortcake</Link>
+                </div>
+                <div className={"flex-initial"}>
+                    <h2 className={" m-10 text-center"}>
+                        Apfelkuchen
                     </h2>
-                   <div className={"flex justify-center"}>
-                     <Image
-                        src="/images/Apfelkuchen-mit-Streusel-08-scaled.webp"
-                        alt="Apfelkuchen"
-                        width={500}
-                        height={500}
-                     />
-                   </div>
-                </section>
+                    <div className={"flex justify-center"}>
+                        <Image
+                            src="/images/Apfelkuchen-mit-Streusel-08-scaled.webp"
+                            alt="Apfelkuchen"
+                            width={400}
+                            height={500}
+                        />
+                    </div>
+                    <Link href="/recipe/apfelkuchen"
+                          className={" m-96 text-neutral-50 text-xl bg-blue-950 "}>Apfelkuchen</Link>
+                </div>
+
+                <div className={"flex-initial"}>
+                    <h2 className={"m-10 text-center"}>
+                        birthday-cake
+                    </h2>
+                    <div className={"flex-initial"}>
+                        <Image
+                            src="/images/Cake Decorator Photo Shoot.jpeg"
+                            alt="birthday-cake"
+                            width={300}
+                            height={350}
+                        />
+                    </div>
+                    <Link href="/recipe/birthday-cake"className={" m-30 text-neutral-50 text-center text-xl bg-blue-950 "}>birthday-cake</Link>
+                </div>
+
             </main>
             <Footer/>
         </div>

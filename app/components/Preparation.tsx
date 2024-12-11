@@ -2,7 +2,6 @@ type Props = {
     steps: string[];
     title: string;
 };
-
 const Preparation = ({title, steps}: Props) => {
     return (
         <div>

@@ -21,8 +21,7 @@ const Ingredients = ({title, ingredients}: Props) => {
             </ul>
         </div>
 
-        ) // TODO UTILISER FLEX POUR METRE LES CHECKBOX DEVANT REEMPLACER LE PON PAR CHECKBOX
-
+        )
 }
 export default Ingredients;
 
