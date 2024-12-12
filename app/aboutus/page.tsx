@@ -7,7 +7,7 @@ export default function aboutus() {
 
     return (
         <div className="aboutus-container">
-            <Navbar/>
+            <Navbar selected={"about-us"}/>
             <Hero title1={"About-Us"}/>
             <main className={"p-10 bg-gray-100"}>
                 <h1 className={"text-center text-3xl py-5 "}>Crazy Cake</h1>

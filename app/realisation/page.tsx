@@ -6,7 +6,7 @@ import Footer from "@/app/components/Footer";
 export default function realisation() {
     return (
         <div className="realisation">
-            <Navbar/>
+            <Navbar selected={"realisation"}/>
             <Hero title1={"Realisation"} />
             <main className="main-layout p-10  bg-gray-100">
                 <h1 className={"text-center text-3xl py-5 "}>Our Creations</h1>

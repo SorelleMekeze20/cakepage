@@ -1,64 +1,53 @@
 "use client";
-import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import Hero from "@/app/components/Heros";
 
+type RecipeProps = {
+    title: string;
+    imagePath: string;
+    link: string;
+}
+
+const Recipe = ({title, imagePath, link}: RecipeProps) => {
+    return <div className={"flex flex-col items-end hover:scale-105 transition"}>
+
+        <div className={"h-full"}>
+            <img
+                src={imagePath}
+                alt={title}
+                width={384}
+                className={"h-full object-cover"}
+            />
+        </div>
+
+        <Link href={link} className={"w-fit m-30 text-neutral-50 text-center text-xl bg-blue-950 p-2"}>
+            {title}
+        </Link>
+
+    </div>;
+}
+
 export default function Page() {
 
     return (
         <div className="bg-white min-h-9">
-            <Navbar/>
-            <Hero />
+            <Navbar selected={"recipe"}/>
 
-            <main className="main-layout flex p-10 bg-gray-100">
-                <div className={"flex-initial"}>
-                    <h2 className={"m-10 text-center"}>
-                        Japanaise Shortcake
-                    </h2>
-                    <div className={"flex-initial"}>
-                        <Image
-                            src="/images/IMG_8437.jpg"
-                            alt="Japanaise Shortcake"
-                            width={400}
-                            height={500}
-                        />
-                    </div>
-                    <Link href="/recipe/japanaise-shortcake"
-                          className={" m-30 text-neutral-50 text-center text-xl bg-blue-950 "}>Japanaise
-                        Shortcake</Link>
-                </div>
-                <div className={"flex-initial"}>
-                    <h2 className={" m-10 text-center"}>
-                        Apfelkuchen
-                    </h2>
-                    <div className={"flex justify-center"}>
-                        <Image
-                            src="/images/Apfelkuchen-mit-Streusel-08-scaled.webp"
-                            alt="Apfelkuchen"
-                            width={400}
-                            height={500}
-                        />
-                    </div>
-                    <Link href="/recipe/apfelkuchen"
-                          className={" m-96 text-neutral-50 text-xl bg-blue-950 "}>Apfelkuchen</Link>
-                </div>
+            <Hero title1={"RECIPE"} title2={"Test 2"}/>
 
-                <div className={"flex-initial"}>
-                    <h2 className={"m-10 text-center"}>
-                        birthday-cake
-                    </h2>
-                    <div className={"flex-initial"}>
-                        <Image
-                            src="/images/Cake Decorator Photo Shoot.jpeg"
-                            alt="birthday-cake"
-                            width={300}
-                            height={350}
-                        />
-                    </div>
-                    <Link href="/recipe/birthday-cake"className={" m-30 text-neutral-50 text-center text-xl bg-blue-950 "}>birthday-cake</Link>
-                </div>
+            <main className="main-layout flex p-10 gap-10 justify-center">
+
+                <Recipe imagePath={"/images/IMG_8437.jpg"} title={"Japanese Shortcake"}
+                        link={"/recipe/japanese-shortcake"}/>
+
+                <Recipe imagePath={"/images/Apfelkuchen-mit-Streusel-08-scaled.webp"} title={"Apfelkuchen"}
+                        link={"/recipe/apfelkuchen"}/>
+
+                <Recipe imagePath={"/images/Cake Decorator Photo Shoot.jpeg"} title={"Birthday Cake"}
+                        link={"/recipe/birthday-cake"}/>
+
 
             </main>
             <Footer/>

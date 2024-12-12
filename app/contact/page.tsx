@@ -18,7 +18,7 @@ export default function Contact() {
 
     return (
         <div >
-            <Navbar/>
+            <Navbar selected={"contact"}/>
             <Hero title1={"Contact"} />
             <main className="max-w-2xl  m-auto bg-white p-10 bg-gray-100 ">
                 <h1 className={"text-3xl font-semibold text-center mb-6 "}>Contact Us</h1>

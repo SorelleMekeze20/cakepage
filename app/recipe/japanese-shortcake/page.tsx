@@ -29,9 +29,9 @@ export default function Page() {
         <div className="page-container">
             <Navbar/>
             <Hero />
-            <main className="main-layout">
+            <main className="main-layout bg-gray-100 ">
                 <section className="japanase-shortcake p-10">
-                    <div className="flex bg-gray-100">
+                    <div className="flex ">
                         <div className="flex-initial">
                             <h2>Japanaise Shortcake Recipe</h2>
                             <p>
