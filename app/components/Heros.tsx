@@ -11,8 +11,8 @@ const Hero = ({title1, title2}: Props) => {
                 <h1>Crazy Cakes</h1>
             </div>
             <div
-                className="  text-3xl herosanimation absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 whitespace-nowrap overflow-hidden box-border px-0 py-2   ">
-                <h1 className={"mx-3"}>{title1}</h1>
+                className="  text-3xl herosanimation absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 my-5   ">
+                <h1 className={"font-bold text-black text-4xl sm:text-5xl"}>{title1}</h1>
 
             </div>
             <div className="absolute inset-0 z-0">

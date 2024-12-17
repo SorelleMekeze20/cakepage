@@ -10,8 +10,8 @@ export default function aboutus() {
             <Navbar selected={"about-us"}/>
             <Hero title1={"About-Us"}/>
             <main className={"p-10 bg-gray-100"}>
-                <h1 className={"text-center text-3xl py-5 "}>Crazy Cake</h1>
-                <p>Welcome to our bakery, where every cake is a labor of love, and every recipe tells a story! We are a passionate team of bakers and cake enthusiasts dedicated to creating delicious, memorable treats that bring joy to every celebration.
+                <h1 className={"text-center text-3xl py-5  "}>Crazy Cake</h1>
+                <p className={" text-center  max-w-xl mx-auto"}>Welcome to our bakery, where every cake is a labor of love, and every recipe tells a story! We are a passionate team of bakers and cake enthusiasts dedicated to creating delicious, memorable treats that bring joy to every celebration.
 
                     Our journey began with a love for baking that has been passed down through generations. What started as a small home kitchen experiment has blossomed into a bakery that strives to bring the same warmth, joy, and creativity to every cake we make.
 

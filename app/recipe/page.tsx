@@ -13,14 +13,16 @@ type RecipeProps = {
 const Recipe = ({title, imagePath, link}: RecipeProps) => {
     return <div className={"flex flex-col items-end hover:scale-105 transition"}>
 
-        <div className={"h-full"}>
+
+            <Link href={link} className={"h-full"}>
             <img
                 src={imagePath}
                 alt={title}
                 width={384}
                 className={"h-full object-cover"}
             />
-        </div>
+        </Link>
+
 
         <Link href={link} className={"w-fit m-30 text-neutral-50 text-center text-xl bg-blue-950 p-2"}>
             {title}

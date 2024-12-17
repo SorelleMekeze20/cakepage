@@ -10,7 +10,7 @@ export default function realisation() {
             <Hero title1={"Realisation"} />
             <main className="main-layout p-10  bg-gray-100">
                 <h1 className={"text-center text-3xl py-5 "}>Our Creations</h1>
-                <p>
+                <p className={"text-center  max-w-xl mx-auto"}>
                     At our bakery, each creation is a masterpiece made with love and attention to detail. We take pride
                     in crafting cakes and pastries that not only taste incredible but are also visually stunning. Below
                     are some of our most memorable projects:
@@ -31,7 +31,7 @@ export default function realisation() {
                             to provide custom cakes for corporate events, grand openings, and holiday parties.
                         </li>
                 </p>
-                <p>
+                <p className={"text-center  max-w-xl mx-auto"}>
                     Explore some of our proudest achievements in the gallery below, and get inspired for your
                     next special occasion. If you have a vision for your event, let us bring it to life with a
                     custom creation made just for you!
