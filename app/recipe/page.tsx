@@ -37,7 +37,7 @@ export default function Page() {
         <div className="bg-white min-h-9">
             <Navbar selected={"recipe"}/>
 
-            <Hero title1={"RECIPE"} title2={"Test 2"}/>
+            <Hero title1={"Recipe"} title2={"Test 2"}/>
 
             <main className="main-layout flex p-10 gap-10 justify-center">
 

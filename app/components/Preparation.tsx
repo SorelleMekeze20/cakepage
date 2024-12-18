@@ -5,8 +5,8 @@ type Props = {
 const Preparation = ({title, steps}: Props) => {
     return (
         <div>
-            <h2>{title}</h2>
-            <ul>
+            <h2 className={"text-xl mt-8"}>{title}</h2>
+            <ul className={"list-disc list-inside ml-3"}>
                 {steps.map((step) => (
                     <li key={step.toString()}>{step}</li>
                 ))}

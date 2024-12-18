@@ -15,18 +15,18 @@ function Footer() {
                     <p>Phone: +49 17600000000</p>
                 </div>
                 <div className="px-4">
-                    <h3>Follow Us</h3>
+                    <h3 className={"mb-1.5"}>Follow Us</h3>
                     <div className="flex space-x-4">
                         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
-                           className="text-gray-800 hover:text-purple-500">
+                           className="hover:text-purple-500">
                             <FaInstagram className="h-8 w-8"/>
                         </a>
                         <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"
-                           className="text-gray-800 hover:text-blue-500">
+                           className="hover:text-blue-500">
                             <FaTwitter className="h-8 w-8"/>
                         </a>
                         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
-                           className="text-gray-800 hover:text-blue-700">
+                           className="hover:text-blue-700">
                             <FaFacebook className="h-8 w-8"/>
                         </a>
                     </div>

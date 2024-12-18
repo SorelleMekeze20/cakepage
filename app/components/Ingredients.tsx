@@ -9,11 +9,11 @@ const Ingredients = ({title, ingredients}: Props) => {
 
         return (
         <div>
-            <h2>{title}</h2>
-            <ul className="list-none list-inside p-5 m-5">
+            <h2 className={"text-xl mt-8"}>{title}</h2>
+            <ul className="list-none list-inside">
                 {ingredients.map((ingredient) => (
                     <li
-                        key={ingredient} className={"flex items-center space-x-3"}>
+                        key={ingredient} className={"flex items-center space-x-3 ml-2.5"}>
                         <Checkbox text={ingredient}/>
                     </li>
                 ))}

@@ -27,15 +27,16 @@ export default function Page() {
 
     return (
         <div className="page-container">
-            <Navbar/>
+            <Navbar selected={"recipe"}/>
+
             <Hero />
             <main className="main-layout bg-gray-100 ">
                 <section className="japanase-shortcake p-10">
                     <div className="flex ">
                         <div className="flex-initial">
-                            <h2>Japanaise Shortcake Recipe</h2>
+                            <h2 className={"text-3xl"}>Japanese Shortcake Recipe</h2>
                             <p>
-                                Discover the recipe for Japanaise Shortcake, a delicious soft cake with fresh
+                                Discover the recipe for Japanese Shortcake, a delicious soft cake with fresh
                                 strawberries and whipped cream. Perfect for any occasion!
                             </p>
 
@@ -43,14 +44,16 @@ export default function Page() {
                             <Preparation title={"Preparation Stage"} steps={steps}/>
 
 
-                            <p>
-                                Enjoy your Japanaise Shortcake with a cup of tea or coffee! This cake is best enjoyed
+                            <p className={"pt-5"}>
+                                Enjoy your Japanese Shortcake with a cup of tea or coffee! This cake is best enjoyed
                                 fresh but can be stored in the refrigerator for up to 2 days.
                             </p>
+
                         </div>
 
-                        <div className="flex-initial">
+                        <div className="flex-initial w-fit pl-24 content-center">
                             <Image
+                                className={""}
                                 src="/images/IMG_8437.jpg"
                                 alt="Japanaise Shortcake"
                                 width={500}

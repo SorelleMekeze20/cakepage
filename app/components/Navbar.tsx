@@ -16,15 +16,13 @@ const Navbar = ({title, links, selected}: Props) => {
         {name: "Realisation", url: "/realisation"},
     ];
 
-
-
     return (
         <header>
-            <nav className={"navbar fixed w-full z-50 flex "}>
+            <nav className={"navbar fixed w-full z-50 flex mt-7"}>
                 <ul className={"mr-20 flex gap-5 w-full justify-end"}>
                     {
                         links.map((link) => (
-                            <li key={link.name} className={"text-white font-bold text-xl " + (link.name.toLowerCase() === selected ? "underline" : "") }>
+                            <li key={link.name} className={"font-bold text-xl hover:text-orange-300 " + (link.name.toLowerCase() === selected ? "underline text-orange-300" : "text-white") }>
                                 <Link href={link.url}>{link.name}</Link>
                             </li>
                         ))

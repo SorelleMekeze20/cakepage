@@ -42,7 +42,8 @@ export default function Page() {
 
     return (
         <div className="page-container">
-            <Navbar/>
+            <Navbar selected={"recipe"}/>
+
             <Hero />
 
             <main className="main-layout bg-gray-100">

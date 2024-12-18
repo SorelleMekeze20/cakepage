@@ -36,8 +36,9 @@ export default function Page() {
 
     return (
         <div className="page-container">
-            <Navbar/>
-            <Hero title1={"Welcome to Crazy Cakes!"} />
+            <Navbar selected={"recipe"}/>
+
+            <Hero title1={""} />
             <main className="main-layout bg-gray-100">
                 <section className="japanaise-shortcake p-10">
                     <div className="flex">

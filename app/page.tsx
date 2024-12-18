@@ -11,7 +11,7 @@ export default function Home() {
                 <Hero title1={"Home"}/>
                 <main className="main-layout bg-gray-100 ">
                     <div className="flex flex-col justify-center ">
-                        <h1 className="text-center text-3xl py-5">
+                        <h1 className="text-center text-3xl py-5 mt-5">
                             Welcome to Crazy Cakes Your destination for the most delightful cake recipes
                         </h1>
                         <div className={" max-w-6xl justify-center  mx-auto"}>
